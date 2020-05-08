@@ -1,13 +1,13 @@
 package pl.kukla.krzys.di.service;
 
-import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 /**
  * @author Krzysztof Kukla
  */
 @Service
-@Primary
+@Profile("first")
 public class GreetingServiceFirst implements GreetingService {
     @Override
     public String sayHello() {
