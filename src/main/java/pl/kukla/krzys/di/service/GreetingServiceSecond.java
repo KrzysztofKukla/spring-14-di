@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
  * @author Krzysztof Kukla
  */
 @Service
-@Profile("second")
+@Profile({"default", "second"})
 public class GreetingServiceSecond implements GreetingService {
     @Override
     public String sayHello() {
